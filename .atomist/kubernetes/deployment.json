@@ -18,15 +18,6 @@
                 }
               },
               {
-                "name": "ATOMIST_CONFIG",
-                "valueFrom": {
-                  "secretKeyRef": {
-                    "name": "atm-global",
-                    "key": "config"
-                  }
-                }
-              },
-              {
                 "name": "ATOMIST_CONFIG_PATH",
                 "value": "/opt/atm/atomist-config.json"
               }

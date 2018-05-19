@@ -1,0 +1,36 @@
+query DeploymentSdmGoalsByCommit($sha: [String!]) {
+  SdmGoal(sha: $sha, _first: 200, state: ["success"]) {
+    repo {
+      name
+      owner
+      providerId
+    }
+    id
+    branch
+    name
+    state
+    description
+    goalSet
+    goalSetId
+    uniqueName
+    environment
+    preConditions {
+      environment
+      name
+    }
+    provenance {
+      registration
+      name
+      version
+    }
+    ts
+    fulfillment(method: ["side-effect"], name: ["@atomist/k8-automation"]) @required {
+      method
+      name
+    }
+    data
+    sha
+    externalKey
+  }
+}
+

@@ -1,0 +1,29 @@
+type SentryAlert @rootType {
+    level: String
+    message: String @searchable
+    project: String
+    project_name: String
+    culprit: String
+    url: String
+    event: SentryEvent
+}
+
+type SentryEvent {
+    event_id: String
+    extra: SentryEventExtra
+}
+
+type SentryEventExtra {
+    artifact: String
+    version: String
+    correlation_id: String
+    invocation_id: String
+    git_owner: String
+    git_repo: String
+    git_sha: String
+    operation_name: String
+    operation_type: String
+    team_id: String
+    team_name: String
+    environment: String
+}

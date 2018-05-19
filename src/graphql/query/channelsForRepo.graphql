@@ -1,0 +1,13 @@
+query ChannelsForRepo($repo: String!, $owner: String!) {
+    Repo(name: $repo, owner: $owner) @required {
+        name
+        owner
+        channels {
+            name
+            team {
+                id
+            }
+        }
+    }
+}
+

@@ -57916,7 +57916,18 @@
             {
               "name": "extra",
               "description": null,
-              "args": [],
+              "args": [
+                {
+                  "name": "git_sha",
+                  "description": null,
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                }
+              ],
               "type": {
                 "kind": "OBJECT",
                 "name": "SentryEventExtra",
@@ -57938,6 +57949,38 @@
           "interfaces": [],
           "name": "SentryAlert",
           "fields": [
+            {
+              "name": "commit",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "Commit",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null,
+              "directives": [
+                {
+                  "name": "linkTo",
+                  "args": [
+                    {
+                      "name": "queryName",
+                      "value": "commitBySha"
+                    },
+                    {
+                      "name": "variables",
+                      "value": [
+                        {
+                          "name": "sha",
+                          "path": "$.event.extra.git_sha"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "culprit",
               "description": null,
@@ -58075,6 +58118,19 @@
             },
             {
               "name": "correlation_id",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null,
+              "directives": []
+            },
+            {
+              "name": "environment",
               "description": null,
               "args": [],
               "type": {
@@ -59949,6 +60005,6 @@
     }
   },
   "extensions": {
-    "correlation_id": "adeefe8e-a256-4d34-bd84-7d29e2706303"
+    "correlation_id": "e6d6930b-852e-4266-9786-1ff11ee01426"
   }
 }

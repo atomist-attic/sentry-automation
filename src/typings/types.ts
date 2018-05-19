@@ -1001,5 +1001,6 @@ export namespace SentryAlert {
     team_id?: string | null;
     team_name?: string | null;
     version?: string | null;
+    environment?: string | null;
   };
 }

@@ -6,11 +6,20 @@ type SentryAlert @rootType {
     culprit: String
     url: String
     event: SentryEvent
+    commit: Commit @linkTo(
+                        queryName: "commitBySha",
+                        variables: [{name: "sha", path: "$.event.extra.git_sha"}]
+                    )
+                    #@linkFrom(
+                    #    field: {kind: LIST, name: "sentryAlerts"},
+                    #    query: "query sentryAlert($sha: String!) { SentryAlert {id event {extra(git_sha: [$sha]) {git_sha} } } }",
+                    #    variables: [{name: "sha", path: "$.sha"}]
+                    #)
 }
 
 type SentryEvent {
     event_id: String
-    extra: SentryEventExtra
+    extra(git_sha: String): SentryEventExtra
 }
 
 type SentryEventExtra {

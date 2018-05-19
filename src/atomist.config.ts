@@ -7,7 +7,6 @@ import { RollbackDeployment } from "./handlers/commands/RollbackDeployment";
 const AdminTeam = "atomist-automation";
 
 export const configuration: Configuration = {
-    teamIds: ["T29E48P34"],
     commands: [
         secured.githubTeam(() => new RollbackDeployment(), AdminTeam),
     ],

@@ -56,7 +56,7 @@
     "clean:js": "rimraf '{src,test}/**/*.js'",
     "clean:npm": "rimraf node_modules",
     "compile": "npm-run-all git:info gql:gen compile:gql compile:ts",
-    "compile:gql": "copyfiles './src/**/*.graphql' ./build",
+    "compile:gql": "copyfiles './src/**/*.graphql' ./build/src",
     "compile:ts": "tsc --project .",
     "debug": "node $NODE_DEBUG_OPTION node_modules/@atomist/automation-client/start.client.js",
     "fmt": "tsfmt --replace",

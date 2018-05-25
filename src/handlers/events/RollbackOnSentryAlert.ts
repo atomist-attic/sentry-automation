@@ -62,7 +62,7 @@ export class RollbackOnSentryAlert implements HandleEvent<SentryAlert.Subscripti
                 if (shas.length > 0) {
 
                     const goals = [];
-                    for (const s in shas) {
+                    for (const s of shas) {
                         const goal = await findDeploymentGoals(s, environment, ctx);
                         if (goal) {
                             goals.push(goal);

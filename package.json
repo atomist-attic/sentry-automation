@@ -1,7 +1,7 @@
 {
   "name": "@atomist/sentry-automation",
   "description": "Atomist automation to ingest Sentry alerts and trigger deployment rollbacks",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Atomist",
   "license": "Apache-2.0",
   "repository": {
@@ -18,7 +18,7 @@
     "sentry"
   ],
   "dependencies": {
-    "@atomist/automation-client": "https://r.atomist.com/BJxzuM1V20G",
+    "@atomist/automation-client": "https://r.atomist.com/rJE1M9O6AG",
     "@atomist/slack-messages": "^0.12.1"
   },
   "devDependencies": {

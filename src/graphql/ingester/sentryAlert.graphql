@@ -10,11 +10,11 @@ type SentryAlert @rootType {
                         queryName: "commitBySha",
                         variables: [{name: "sha", path: "$.event.extra.git_sha"}]
                     )
-                    #@linkFrom(
-                    #    field: {kind: LIST, name: "sentryAlerts"},
-                    #    query: "query sentryAlert($sha: String!) { SentryAlert {id event {extra(git_sha: [$sha]) {git_sha} } } }",
-                    #    variables: [{name: "sha", path: "$.sha"}]
-                    #)
+                    @linkFrom(
+                        field: {kind: LIST, name: "sentryAlerts"},
+                        query: "query sentryAlert($sha: String!) { SentryAlert {id event {extra(git_sha: [$sha]) {git_sha} } } }",
+                        variables: [{name: "sha", path: "$.event.extra.git_sha"}]
+                    )
 }
 
 type SentryEvent {

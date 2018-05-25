@@ -1,11 +1,15 @@
-query DeploymentsForRepo ($owner: [String!], $repo: [String!], $environment: [String!]) {
-    Deployment(_orderBy: "ts", environment: $environment, _first: 50) {
-        commit(owner: $owner, repo: $repo) {
-            owner
-            repo
-            sha
-        }
-        environment
-        ts
+query DeploymentsForRepo(
+  $owner: [String!]
+  $repo: [String!]
+  $environment: [String!]
+) {
+  Deployment(_orderBy: "ts", environment: $environment, _first: 50) {
+    commit(owner: $owner, repo: $repo) {
+      owner
+      repo
+      sha
     }
+    environment
+    ts
+  }
 }

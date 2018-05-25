@@ -1,28 +1,28 @@
 subscription SentryAlert {
-    SentryAlert {
-        id
-        culprit
-        event {
-            event_id
-            extra {
-                artifact
-                correlation_id
-                git_owner
-                git_repo
-                git_sha
-                invocation_id
-                operation_name
-                operation_type
-                team_id
-                team_name
-                version
-                environment
-            }
-        }
-        level
-        message
-        project
-        project_name
-        url
+  SentryAlert {
+    id
+    culprit
+    event {
+      event_id
+      extra {
+        artifact
+        correlation_id
+        git_owner
+        git_repo
+        git_sha
+        invocation_id
+        operation_name
+        operation_type
+        team_id
+        team_name
+        version
+        environment
+      }
     }
+    level
+    message
+    project
+    project_name
+    url
+  }
 }

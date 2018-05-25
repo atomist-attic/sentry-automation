@@ -24,7 +24,8 @@ query DeploymentSdmGoalsByCommit($sha: [String!]) {
       version
     }
     ts
-    fulfillment(method: ["side-effect"], name: ["@atomist/k8-automation"]) @required {
+    fulfillment(method: ["side-effect"], name: ["@atomist/k8-automation"])
+      @required {
       method
       name
     }
@@ -33,4 +34,3 @@ query DeploymentSdmGoalsByCommit($sha: [String!]) {
     externalKey
   }
 }
-

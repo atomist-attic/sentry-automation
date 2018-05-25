@@ -100,7 +100,7 @@ export class RollbackOnSentryAlert implements HandleEvent<SentryAlert.Subscripti
                                     }),
                                 footer_icon: "https://images.atomist.com/rug/github_grey.png",
                                 footer: url(`https://github.com/${owner}/${repo}`, `${owner}/${repo}`),
-                                ts: Date.now(),
+                                ts: Math.floor(Date.now() / 1000),
                             } ],
                         };
 

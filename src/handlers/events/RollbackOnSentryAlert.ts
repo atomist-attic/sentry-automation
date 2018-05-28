@@ -84,7 +84,7 @@ export class RollbackOnSentryAlert implements HandleEvent<SentryAlert.Subscripti
                                 author_icon: "https://images.atomist.com/rug/error-circle.png",
                                 author_name: "Monitoring Alert",
                                 text: `Alert ${url(alert.url, italic(alert.message))} was raised against ${
-                                    bold(`${owner}/${repo}`)} ${codeLine(sha.slice(0, 6))} in ${codeLine(environment)}`,
+                                    bold(`${owner}/${repo}`)} ${codeLine(sha.slice(0, 7))} in ${codeLine(environment)}`,
                                 fallback: "Monitoring Alert",
                                 color: "#D94649",
                                 mrkdwn_in: [ "text", "footer" ],
@@ -95,7 +95,7 @@ export class RollbackOnSentryAlert implements HandleEvent<SentryAlert.Subscripti
                                         handler.id = goal.id;
                                         handler.msgId = alert.url;
                                         return buttonForCommand(
-                                            { text: `Rollback to '${goal.sha.slice(0, 6)}'` },
+                                            { text: `Rollback to '${goal.sha.slice(0, 7)}'` },
                                             handler);
                                     }),
                                 footer_icon: "https://images.atomist.com/rug/github_grey.png",

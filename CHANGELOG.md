@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 -   This is my first test issue. [#1](https://github.com/atomist/sentry-automation/issues/1)
+-   Some manual issue was added.

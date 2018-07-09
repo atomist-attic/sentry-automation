@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 import { Configuration } from "@atomist/automation-client";
 import { ingester } from "@atomist/automation-client/graph/graphQL";
 import * as secured from "@atomist/automation-client/secured";

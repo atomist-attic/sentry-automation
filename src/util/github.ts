@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 import * as GitHubApi from "@octokit/rest";
 import * as URL from "url";
 

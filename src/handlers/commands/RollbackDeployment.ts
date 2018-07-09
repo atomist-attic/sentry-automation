@@ -15,7 +15,10 @@ import {
     codeLine,
 } from "@atomist/slack-messages";
 import * as _ from "lodash";
-import { SdmGoalById } from "../../typings/types";
+import {
+    SdmGoalById,
+    SdmGoalState,
+} from "../../typings/types";
 import { success } from "../../util/messages";
 
 @ConfigurableCommandHandler("Trigger rollback of deployment", {
@@ -60,7 +63,7 @@ export class RollbackDeployment implements HandleCommand {
         goal.name = `re${goal.name}`;
         goal.environment = "10-redeploy";
         goal.uniqueName = `Re${goal.uniqueName}`;
-        goal.state = "requested";
+        goal.state = SdmGoalState.requested;
         goal.ts = Date.now();
         goal.goalSet = "Rollback";
         goal.goalSetId = guid();

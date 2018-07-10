@@ -16,7 +16,7 @@ This page details all runtime OSS dependencies of `@atomist/sentry-automation`.
 |[Custom: https://github.com/douglascrockford/JSON-js](#custom-httpsgithubcomdouglascrockfordjson-js)|1|
 |[GPL-3.0](#gpl-30)|4|
 |[ISC](#isc)|36|
-|[MIT](#mit)|467|
+|[MIT](#mit)|464|
 |[Public Domain](#public-domain)|1|
 |[Unlicense](#unlicense)|2|
 
@@ -103,7 +103,7 @@ GNU General Public License v3.0 only - [http://www.gnu.org/licenses/gpl-3.0-stan
 
 | Name | Version | Publisher | Repository |
 |------|---------|-----------|------------|
-|`@atomist/automation-client`|`0.18.0-20180709015914`|Atomist, Inc.|[https://github.com/atomist/automation-client-ts](https://github.com/atomist/automation-client-ts)|
+|`@atomist/automation-client`|`0.18.0-20180710091719`|Atomist, Inc.|[https://github.com/atomist/automation-client-ts](https://github.com/atomist/automation-client-ts)|
 |`@atomist/microgrammar`|`0.7.0`|Atomist|[https://github.com/atomist/microgrammar](https://github.com/atomist/microgrammar)|
 |`@atomist/microgrammar`|`0.7.0-20180528084001`|Atomist|[https://github.com/atomist/microgrammar](https://github.com/atomist/microgrammar)|
 |`@atomist/tree-path`|`0.1.9`|Atomist, Inc.|[https://github.com/atomist/tree-path-ts](https://github.com/atomist/tree-path-ts)|
@@ -258,7 +258,6 @@ MIT License - [http://www.opensource.org/licenses/MIT](http://www.opensource.org
 |`commander`|`2.15.0`|TJ Holowaychuk|[https://github.com/tj/commander.js](https://github.com/tj/commander.js)|
 |`common-tags`|`1.7.2`|Declan de Wet|[https://github.com/declandewet/common-tags](https://github.com/declandewet/common-tags)|
 |`concat-map`|`0.0.1`|James Halliday|[https://github.com/substack/node-concat-map](https://github.com/substack/node-concat-map)|
-|`config`|`1.30.0`|Loren West|[https://github.com/lorenwest/node-config](https://github.com/lorenwest/node-config)|
 |`constant-case`|`2.0.0`|Blake Embrey|[https://github.com/blakeembrey/constant-case](https://github.com/blakeembrey/constant-case)|
 |`content-disposition`|`0.5.2`||[https://github.com/jshttp/content-disposition](https://github.com/jshttp/content-disposition)|
 |`content-security-policy-builder`|`2.0.0`|Evan Hahn|[https://github.com/helmetjs/content-security-policy-builder](https://github.com/helmetjs/content-security-policy-builder)|
@@ -416,7 +415,6 @@ MIT License - [http://www.opensource.org/licenses/MIT](http://www.opensource.org
 |`json-buffer`|`3.0.0`|Dominic Tarr|[https://github.com/dominictarr/json-buffer](https://github.com/dominictarr/json-buffer)|
 |`json-schema-traverse`|`0.3.1`|Evgeny Poberezkin|[https://github.com/epoberezkin/json-schema-traverse](https://github.com/epoberezkin/json-schema-traverse)|
 |`json-stable-stringify`|`1.0.1`|James Halliday|[https://github.com/substack/json-stable-stringify](https://github.com/substack/json-stable-stringify)|
-|`json5`|`0.4.0`|Aseem Kishore|[https://github.com/aseemk/json5](https://github.com/aseemk/json5)|
 |`jsonfile`|`4.0.0`|JP Richardson|[https://github.com/jprichardson/node-jsonfile](https://github.com/jprichardson/node-jsonfile)|
 |`jsprim`|`1.4.1`||[https://github.com/joyent/node-jsprim](https://github.com/joyent/node-jsprim)|
 |`keyv`|`3.0.0`|Luke Childs|[https://github.com/lukechilds/keyv](https://github.com/lukechilds/keyv)|
@@ -470,7 +468,6 @@ MIT License - [http://www.opensource.org/licenses/MIT](http://www.opensource.org
 |`onetime`|`2.0.1`|Sindre Sorhus|[https://github.com/sindresorhus/onetime](https://github.com/sindresorhus/onetime)|
 |`optimist`|`0.6.1`|James Halliday|[https://github.com/substack/node-optimist](https://github.com/substack/node-optimist)|
 |`ordered-read-streams`|`1.0.1`|Artem Medeusheyev|[https://github.com/armed/ordered-read-streams](https://github.com/armed/ordered-read-streams)|
-|`os-homedir`|`1.0.2`|Sindre Sorhus|[https://github.com/sindresorhus/os-homedir](https://github.com/sindresorhus/os-homedir)|
 |`os-locale`|`2.1.0`|Sindre Sorhus|[https://github.com/sindresorhus/os-locale](https://github.com/sindresorhus/os-locale)|
 |`os-tmpdir`|`1.0.2`|Sindre Sorhus|[https://github.com/sindresorhus/os-tmpdir](https://github.com/sindresorhus/os-tmpdir)|
 |`p-cancelable`|`0.4.1`|Sindre Sorhus|[https://github.com/sindresorhus/p-cancelable](https://github.com/sindresorhus/p-cancelable)|

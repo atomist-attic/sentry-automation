@@ -1,5 +1,5 @@
 query DeploymentSdmGoalsByCommit($sha: [String!]) {
-  SdmGoal(sha: $sha, _first: 200, state: ["success"]) {
+  SdmGoal(sha: $sha, _first: 200, state: [success]) {
     repo {
       name
       owner

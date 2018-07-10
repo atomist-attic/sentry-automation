@@ -18,7 +18,7 @@
     "sentry"
   ],
   "dependencies": {
-    "@atomist/automation-client": "0.18.0-20180709015914",
+    "@atomist/automation-client": "0.18.0-20180710091719",
     "@atomist/slack-messages": "^0.12.1"
   },
   "devDependencies": {

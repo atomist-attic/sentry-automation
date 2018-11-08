@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased](https://github.com/atomist/sentry-automation/compare/0.1.8...HEAD)
+
+### Fixed
+
+-   adada. [#2](https://github.com/atomist/sentry-automation/issues/2)
+
 ## [0.1.8](https://github.com/atomist/sentry-automation/compare/0.1.7...0.1.8) - 2018-07-10
 
 ### Added

@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-import { Configuration } from "@atomist/automation-client";
-import { ingester } from "@atomist/automation-client/lib/graph/graphQL";
-import * as secured from "@atomist/automation-client/lib/secured";
+import {
+    Configuration,
+    GraphQL,
+    secured,
+} from "@atomist/automation-client";
 import { RollbackDeployment } from "./handlers/commands/RollbackDeployment";
 
 // GitHub team membership to check if rollback can be triggered
@@ -27,6 +29,6 @@ export const configuration: Configuration = {
         secured.githubTeam(() => new RollbackDeployment(), AdminTeam),
     ],
     ingesters: [
-        ingester("sentryAlert"),
+        GraphQL.ingester("sentryAlert"),
     ],
 };

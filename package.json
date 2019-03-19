@@ -66,7 +66,7 @@
     "fmt": "npm-run-all fmt:ts fmt:gql",
     "fmt:ts": "tsfmt --replace",
     "fmt:gql": "prettier --write \"**/*.graphql\"",
-    "git:info": "atomist git",
+    "git:info": "atm-git-info",
     "gql:copy": "copyfiles \"src/**/*.graphql\" build",
     "gql:gen": "atm-gql-gen",
     "lint": "npm-run-all lint:ts lint:gql",

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Atomist, Inc.
+ * Copyright © 2019 Atomist, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +15,17 @@
  */
 
 import {
+    addressEvent,
     AutomationContextAware,
-    ConfigurableCommandHandler,
-    HandleCommand,
+    guid,
     HandlerContext,
     HandlerResult,
     MappedParameter,
     MappedParameters,
     Parameter,
 } from "@atomist/automation-client";
-import { guid } from "@atomist/automation-client/internal/util/string";
-import { addressEvent } from "@atomist/automation-client/spi/message/MessageClient";
+import { ConfigurableCommandHandler } from "@atomist/automation-client/lib/decorators";
+import { HandleCommand } from "@atomist/automation-client/lib/HandleCommand";
 import {
     bold,
     codeLine,

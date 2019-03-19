@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Atomist, Inc.
+ * Copyright © 2019 Atomist, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-import { Configuration } from "@atomist/automation-client";
-import { ingester } from "@atomist/automation-client/graph/graphQL";
-import * as secured from "@atomist/automation-client/secured";
+import {
+    Configuration,
+    GraphQL,
+    secured,
+} from "@atomist/automation-client";
 import { RollbackDeployment } from "./handlers/commands/RollbackDeployment";
 
 // GitHub team membership to check if rollback can be triggered
@@ -27,6 +29,6 @@ export const configuration: Configuration = {
         secured.githubTeam(() => new RollbackDeployment(), AdminTeam),
     ],
     ingesters: [
-        ingester("sentryAlert"),
+        GraphQL.ingester("sentryAlert"),
     ],
 };

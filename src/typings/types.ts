@@ -8867,7 +8867,7 @@ export interface _UserJoinedChannelFilter {
 /** Enum for IssueState */
 export enum IssueState {
   open = "open",
-  closed = "closed"
+  closed = "closed",
 }
 /** Ordering Enum for Issue */
 export enum _IssueOrdering {
@@ -8894,24 +8894,24 @@ export enum _IssueOrdering {
   updatedAt_asc = "updatedAt_asc",
   updatedAt_desc = "updatedAt_desc",
   closedAt_asc = "closedAt_asc",
-  closedAt_desc = "closedAt_desc"
+  closedAt_desc = "closedAt_desc",
 }
 /** Enum for ProviderType */
 export enum ProviderType {
   bitbucket_cloud = "bitbucket_cloud",
   github_com = "github_com",
   ghe = "ghe",
-  bitbucket = "bitbucket"
+  bitbucket = "bitbucket",
 }
 /** Enum for OwnerType */
 export enum OwnerType {
   user = "user",
-  organization = "organization"
+  organization = "organization",
 }
 /** Enum for WebhookType */
 export enum WebhookType {
   organization = "organization",
-  repository = "repository"
+  repository = "repository",
 }
 /** Enum for BuildStatus */
 export enum BuildStatus {
@@ -8919,21 +8919,21 @@ export enum BuildStatus {
   broken = "broken",
   failed = "failed",
   started = "started",
-  canceled = "canceled"
+  canceled = "canceled",
 }
 /** Enum for BuildTrigger */
 export enum BuildTrigger {
   pull_request = "pull_request",
   push = "push",
   tag = "tag",
-  cron = "cron"
+  cron = "cron",
 }
 /** Enum for StatusState */
 export enum StatusState {
   pending = "pending",
   success = "success",
   error = "error",
-  failure = "failure"
+  failure = "failure",
 }
 /** Enum for ReviewState */
 export enum ReviewState {
@@ -8942,13 +8942,13 @@ export enum ReviewState {
   approved = "approved",
   commented = "commented",
   unapproved = "unapproved",
-  changes_requested = "changes_requested"
+  changes_requested = "changes_requested",
 }
 /** Enum for CommentCommentType */
 export enum CommentCommentType {
   review = "review",
   pullRequest = "pullRequest",
-  issue = "issue"
+  issue = "issue",
 }
 /** Ordering Enum for Repo */
 export enum _RepoOrdering {
@@ -8971,7 +8971,7 @@ export enum _RepoOrdering {
   gitHubId_asc = "gitHubId_asc",
   gitHubId_desc = "gitHubId_desc",
   defaultBranch_asc = "defaultBranch_asc",
-  defaultBranch_desc = "defaultBranch_desc"
+  defaultBranch_desc = "defaultBranch_desc",
 }
 /** Ordering Enum for Label */
 export enum _LabelOrdering {
@@ -8984,7 +8984,7 @@ export enum _LabelOrdering {
   default_asc = "default_asc",
   default_desc = "default_desc",
   color_asc = "color_asc",
-  color_desc = "color_desc"
+  color_desc = "color_desc",
 }
 /** Ordering Enum for ChatChannel */
 export enum _ChatChannelOrdering {
@@ -9003,7 +9003,7 @@ export enum _ChatChannelOrdering {
   isDefault_asc = "isDefault_asc",
   isDefault_desc = "isDefault_desc",
   botInvitedSelf_asc = "botInvitedSelf_asc",
-  botInvitedSelf_desc = "botInvitedSelf_desc"
+  botInvitedSelf_desc = "botInvitedSelf_desc",
 }
 /** Ordering Enum for ChatId */
 export enum _ChatIdOrdering {
@@ -9028,14 +9028,14 @@ export enum _ChatIdOrdering {
   isBot_asc = "isBot_asc",
   isBot_desc = "isBot_desc",
   timezoneLabel_asc = "timezoneLabel_asc",
-  timezoneLabel_desc = "timezoneLabel_desc"
+  timezoneLabel_desc = "timezoneLabel_desc",
 }
 /** Ordering Enum for Email */
 export enum _EmailOrdering {
   atmTeamId_asc = "atmTeamId_asc",
   atmTeamId_desc = "atmTeamId_desc",
   address_asc = "address_asc",
-  address_desc = "address_desc"
+  address_desc = "address_desc",
 }
 /** Ordering Enum for SCMId */
 export enum _ScmIdOrdering {
@@ -9044,7 +9044,7 @@ export enum _ScmIdOrdering {
   login_asc = "login_asc",
   login_desc = "login_desc",
   name_asc = "name_asc",
-  name_desc = "name_desc"
+  name_desc = "name_desc",
 }
 /** Ordering Enum for GitHubProvider */
 export enum _GitHubProviderOrdering {
@@ -9061,7 +9061,7 @@ export enum _GitHubProviderOrdering {
   gitUrl_asc = "gitUrl_asc",
   gitUrl_desc = "gitUrl_desc",
   providerType_asc = "providerType_asc",
-  providerType_desc = "providerType_desc"
+  providerType_desc = "providerType_desc",
 }
 /** Ordering Enum for Team */
 export enum _TeamOrdering {
@@ -9076,7 +9076,7 @@ export enum _TeamOrdering {
   iconUrl_asc = "iconUrl_asc",
   iconUrl_desc = "iconUrl_desc",
   createdAt_asc = "createdAt_asc",
-  createdAt_desc = "createdAt_desc"
+  createdAt_desc = "createdAt_desc",
 }
 /** Ordering Enum for Person */
 export enum _PersonOrdering {
@@ -9089,7 +9089,7 @@ export enum _PersonOrdering {
   surname_asc = "surname_asc",
   surname_desc = "surname_desc",
   name_asc = "name_asc",
-  name_desc = "name_desc"
+  name_desc = "name_desc",
 }
 /** Ordering Enum for GitHubId */
 export enum _GitHubIdOrdering {
@@ -9098,7 +9098,7 @@ export enum _GitHubIdOrdering {
   login_asc = "login_asc",
   login_desc = "login_desc",
   name_asc = "name_asc",
-  name_desc = "name_desc"
+  name_desc = "name_desc",
 }
 /** Ordering Enum for SCMProvider */
 export enum _ScmProviderOrdering {
@@ -9115,7 +9115,7 @@ export enum _ScmProviderOrdering {
   gitUrl_asc = "gitUrl_asc",
   gitUrl_desc = "gitUrl_desc",
   providerType_asc = "providerType_asc",
-  providerType_desc = "providerType_desc"
+  providerType_desc = "providerType_desc",
 }
 /** Ordering Enum for Org */
 export enum _OrgOrdering {
@@ -9126,7 +9126,7 @@ export enum _OrgOrdering {
   owner_asc = "owner_asc",
   owner_desc = "owner_desc",
   ownerType_asc = "ownerType_asc",
-  ownerType_desc = "ownerType_desc"
+  ownerType_desc = "ownerType_desc",
 }
 /** Ordering Enum for GitHubOrgWebhook */
 export enum _GitHubOrgWebhookOrdering {
@@ -9137,7 +9137,7 @@ export enum _GitHubOrgWebhookOrdering {
   url_asc = "url_asc",
   url_desc = "url_desc",
   webhookType_asc = "webhookType_asc",
-  webhookType_desc = "webhookType_desc"
+  webhookType_desc = "webhookType_desc",
 }
 /** Ordering Enum for Webhook */
 export enum _WebhookOrdering {
@@ -9148,7 +9148,7 @@ export enum _WebhookOrdering {
   url_asc = "url_asc",
   url_desc = "url_desc",
   webhookType_asc = "webhookType_asc",
-  webhookType_desc = "webhookType_desc"
+  webhookType_desc = "webhookType_desc",
 }
 /** Ordering Enum for ChatTeam */
 export enum _ChatTeamOrdering {
@@ -9165,14 +9165,14 @@ export enum _ChatTeamOrdering {
   messageCount_asc = "messageCount_asc",
   messageCount_desc = "messageCount_desc",
   emailDomain_asc = "emailDomain_asc",
-  emailDomain_desc = "emailDomain_desc"
+  emailDomain_desc = "emailDomain_desc",
 }
 /** Ordering Enum for ChannelLink */
 export enum _ChannelLinkOrdering {
   atmTeamId_asc = "atmTeamId_asc",
   atmTeamId_desc = "atmTeamId_desc",
   id_asc = "id_asc",
-  id_desc = "id_desc"
+  id_desc = "id_desc",
 }
 /** Ordering Enum for PullRequest */
 export enum _PullRequestOrdering {
@@ -9207,7 +9207,7 @@ export enum _PullRequestOrdering {
   closedAt_asc = "closedAt_asc",
   closedAt_desc = "closedAt_desc",
   mergedAt_asc = "mergedAt_asc",
-  mergedAt_desc = "mergedAt_desc"
+  mergedAt_desc = "mergedAt_desc",
 }
 /** Ordering Enum for Commit */
 export enum _CommitOrdering {
@@ -9218,7 +9218,7 @@ export enum _CommitOrdering {
   message_asc = "message_asc",
   message_desc = "message_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for Build */
 export enum _BuildOrdering {
@@ -9255,7 +9255,7 @@ export enum _BuildOrdering {
   jobId_asc = "jobId_asc",
   jobId_desc = "jobId_desc",
   data_asc = "data_asc",
-  data_desc = "data_desc"
+  data_desc = "data_desc",
 }
 /** Ordering Enum for Push */
 export enum _PushOrdering {
@@ -9266,7 +9266,7 @@ export enum _PushOrdering {
   timestamp_asc = "timestamp_asc",
   timestamp_desc = "timestamp_desc",
   branch_asc = "branch_asc",
-  branch_desc = "branch_desc"
+  branch_desc = "branch_desc",
 }
 
 export enum SdmGoalState {
@@ -9276,7 +9276,7 @@ export enum SdmGoalState {
   failure = "failure",
   planned = "planned",
   in_process = "in_process",
-  skipped = "skipped"
+  skipped = "skipped",
 }
 /** Ordering Enum for Tag */
 export enum _TagOrdering {
@@ -9291,7 +9291,7 @@ export enum _TagOrdering {
   ref_asc = "ref_asc",
   ref_desc = "ref_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for Release */
 export enum _ReleaseOrdering {
@@ -9302,7 +9302,7 @@ export enum _ReleaseOrdering {
   name_asc = "name_asc",
   name_desc = "name_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for DockerImage */
 export enum _DockerImageOrdering {
@@ -9313,7 +9313,7 @@ export enum _DockerImageOrdering {
   imageName_asc = "imageName_asc",
   imageName_desc = "imageName_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for K8Pod */
 export enum _K8PodOrdering {
@@ -9346,7 +9346,7 @@ export enum _K8PodOrdering {
   containersCrashLoopBackOff_asc = "containersCrashLoopBackOff_asc",
   containersCrashLoopBackOff_desc = "containersCrashLoopBackOff_desc",
   resourceVersion_asc = "resourceVersion_asc",
-  resourceVersion_desc = "resourceVersion_desc"
+  resourceVersion_desc = "resourceVersion_desc",
 }
 /** Ordering Enum for K8Container */
 export enum _K8ContainerOrdering {
@@ -9375,7 +9375,7 @@ export enum _K8ContainerOrdering {
   resourceVersion_asc = "resourceVersion_asc",
   resourceVersion_desc = "resourceVersion_desc",
   containerID_asc = "containerID_asc",
-  containerID_desc = "containerID_desc"
+  containerID_desc = "containerID_desc",
 }
 /** Ordering Enum for Workflow */
 export enum _WorkflowOrdering {
@@ -9390,7 +9390,7 @@ export enum _WorkflowOrdering {
   provider_asc = "provider_asc",
   provider_desc = "provider_desc",
   config_asc = "config_asc",
-  config_desc = "config_desc"
+  config_desc = "config_desc",
 }
 /** Ordering Enum for Status */
 export enum _StatusOrdering {
@@ -9407,7 +9407,7 @@ export enum _StatusOrdering {
   context_asc = "context_asc",
   context_desc = "context_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for HerokuApp */
 export enum _HerokuAppOrdering {
@@ -9424,7 +9424,7 @@ export enum _HerokuAppOrdering {
   appId_asc = "appId_asc",
   appId_desc = "appId_desc",
   release_asc = "release_asc",
-  release_desc = "release_desc"
+  release_desc = "release_desc",
 }
 /** Ordering Enum for Application */
 export enum _ApplicationOrdering {
@@ -9441,7 +9441,7 @@ export enum _ApplicationOrdering {
   domain_asc = "domain_asc",
   domain_desc = "domain_desc",
   data_asc = "data_asc",
-  data_desc = "data_desc"
+  data_desc = "data_desc",
 }
 /** Ordering Enum for Fingerprint */
 export enum _FingerprintOrdering {
@@ -9452,7 +9452,7 @@ export enum _FingerprintOrdering {
   sha_asc = "sha_asc",
   sha_desc = "sha_desc",
   data_asc = "data_asc",
-  data_desc = "data_desc"
+  data_desc = "data_desc",
 }
 /** Ordering Enum for ParentImpact */
 export enum _ParentImpactOrdering {
@@ -9463,7 +9463,7 @@ export enum _ParentImpactOrdering {
   url_asc = "url_asc",
   url_desc = "url_desc",
   data_asc = "data_asc",
-  data_desc = "data_desc"
+  data_desc = "data_desc",
 }
 /** Ordering Enum for Branch */
 export enum _BranchOrdering {
@@ -9478,7 +9478,7 @@ export enum _BranchOrdering {
   isRemote_asc = "isRemote_asc",
   isRemote_desc = "isRemote_desc",
   remoteRepoHtmlUrl_asc = "remoteRepoHtmlUrl_asc",
-  remoteRepoHtmlUrl_desc = "remoteRepoHtmlUrl_desc"
+  remoteRepoHtmlUrl_desc = "remoteRepoHtmlUrl_desc",
 }
 /** Ordering Enum for Review */
 export enum _ReviewOrdering {
@@ -9497,7 +9497,7 @@ export enum _ReviewOrdering {
   submittedAt_asc = "submittedAt_asc",
   submittedAt_desc = "submittedAt_desc",
   htmlUrl_asc = "htmlUrl_asc",
-  htmlUrl_desc = "htmlUrl_desc"
+  htmlUrl_desc = "htmlUrl_desc",
 }
 /** Ordering Enum for Comment */
 export enum _CommentOrdering {
@@ -9524,7 +9524,7 @@ export enum _CommentOrdering {
   htmlUrl_asc = "htmlUrl_asc",
   htmlUrl_desc = "htmlUrl_desc",
   commentType_asc = "commentType_asc",
-  commentType_desc = "commentType_desc"
+  commentType_desc = "commentType_desc",
 }
 /** Ordering Enum for DeletedBranch */
 export enum _DeletedBranchOrdering {
@@ -9535,14 +9535,14 @@ export enum _DeletedBranchOrdering {
   name_asc = "name_asc",
   name_desc = "name_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for ImageLinked */
 export enum _ImageLinkedOrdering {
   atmTeamId_asc = "atmTeamId_asc",
   atmTeamId_desc = "atmTeamId_desc",
   timestamp_asc = "timestamp_asc",
-  timestamp_desc = "timestamp_desc"
+  timestamp_desc = "timestamp_desc",
 }
 /** Ordering Enum for PushImpact */
 export enum _PushImpactOrdering {
@@ -9553,7 +9553,7 @@ export enum _PushImpactOrdering {
   url_asc = "url_asc",
   url_desc = "url_desc",
   data_asc = "data_asc",
-  data_desc = "data_desc"
+  data_desc = "data_desc",
 }
 /** Ordering Enum for PullRequestImpact */
 export enum _PullRequestImpactOrdering {
@@ -9564,29 +9564,29 @@ export enum _PullRequestImpactOrdering {
   url_asc = "url_asc",
   url_desc = "url_desc",
   data_asc = "data_asc",
-  data_desc = "data_desc"
+  data_desc = "data_desc",
 }
 /** Ordering Enum for UserJoinedChannel */
 export enum _UserJoinedChannelOrdering {
   atmTeamId_asc = "atmTeamId_asc",
   atmTeamId_desc = "atmTeamId_desc",
   id_asc = "id_asc",
-  id_desc = "id_desc"
+  id_desc = "id_desc",
 }
 /** asc or desc ordering. Must be used with orderBy */
 export enum _Ordering {
   desc = "desc",
-  asc = "asc"
+  asc = "asc",
 }
 
 export enum CommitIssueRelationshipType {
   fixes = "fixes",
-  references = "references"
+  references = "references",
 }
 
 export enum SdmDeployState {
   requested = "requested",
-  disabled = "disabled"
+  disabled = "disabled",
 }
 
 /** Long type */
@@ -9597,54 +9597,54 @@ export type Long = any;
 // ====================================================
 
 export namespace ChannelsForRepo {
-  export type Variables = {
+  export interface Variables {
     repo: string;
     owner: string;
-  };
+  }
 
-  export type Query = {
+  export interface Query {
     __typename?: "Query";
 
-    Repo?: Maybe<(Maybe<Repo>)[]>;
-  };
+    Repo?: Maybe<Array<Maybe<Repo>>>;
+  }
 
-  export type Repo = {
+  export interface Repo {
     __typename?: "Repo";
 
     name?: Maybe<string>;
 
     owner?: Maybe<string>;
 
-    channels?: Maybe<(Maybe<Channels>)[]>;
-  };
+    channels?: Maybe<Array<Maybe<Channels>>>;
+  }
 
-  export type Channels = {
+  export interface Channels {
     __typename?: "ChatChannel";
 
     name?: Maybe<string>;
 
     team?: Maybe<Team>;
-  };
+  }
 
-  export type Team = {
+  export interface Team {
     __typename?: "ChatTeam";
 
     id?: Maybe<string>;
-  };
+  }
 }
 
 export namespace DeploymentSdmGoalsByCommit {
-  export type Variables = {
+  export interface Variables {
     sha?: Maybe<string[]>;
-  };
+  }
 
-  export type Query = {
+  export interface Query {
     __typename?: "Query";
 
-    SdmGoal?: Maybe<(Maybe<SdmGoal>)[]>;
-  };
+    SdmGoal?: Maybe<Array<Maybe<SdmGoal>>>;
+  }
 
-  export type SdmGoal = {
+  export interface SdmGoal {
     __typename?: "SdmGoal";
 
     repo?: Maybe<Repo>;
@@ -9667,9 +9667,9 @@ export namespace DeploymentSdmGoalsByCommit {
 
     environment?: Maybe<string>;
 
-    preConditions?: Maybe<(Maybe<PreConditions>)[]>;
+    preConditions?: Maybe<Array<Maybe<PreConditions>>>;
 
-    provenance?: Maybe<(Maybe<Provenance>)[]>;
+    provenance?: Maybe<Array<Maybe<Provenance>>>;
 
     ts?: Maybe<number>;
 
@@ -9680,9 +9680,9 @@ export namespace DeploymentSdmGoalsByCommit {
     sha?: Maybe<string>;
 
     externalKey?: Maybe<string>;
-  };
+  }
 
-  export type Repo = {
+  export interface Repo {
     __typename?: "SdmRepository";
 
     name?: Maybe<string>;
@@ -9690,17 +9690,17 @@ export namespace DeploymentSdmGoalsByCommit {
     owner?: Maybe<string>;
 
     providerId?: Maybe<string>;
-  };
+  }
 
-  export type PreConditions = {
+  export interface PreConditions {
     __typename?: "SdmCondition";
 
     environment?: Maybe<string>;
 
     name?: Maybe<string>;
-  };
+  }
 
-  export type Provenance = {
+  export interface Provenance {
     __typename?: "SdmProvenance";
 
     registration?: Maybe<string>;
@@ -9708,31 +9708,31 @@ export namespace DeploymentSdmGoalsByCommit {
     name?: Maybe<string>;
 
     version?: Maybe<string>;
-  };
+  }
 
-  export type Fulfillment = {
+  export interface Fulfillment {
     __typename?: "SdmGoalFulfillment";
 
     method?: Maybe<string>;
 
     name?: Maybe<string>;
-  };
+  }
 }
 
 export namespace DeploymentsForRepo {
-  export type Variables = {
+  export interface Variables {
     owner?: Maybe<string[]>;
     repo?: Maybe<string[]>;
     environment?: Maybe<string[]>;
-  };
+  }
 
-  export type Query = {
+  export interface Query {
     __typename?: "Query";
 
-    Deployment?: Maybe<(Maybe<Deployment>)[]>;
-  };
+    Deployment?: Maybe<Array<Maybe<Deployment>>>;
+  }
 
-  export type Deployment = {
+  export interface Deployment {
     __typename?: "Deployment";
 
     commit?: Maybe<Commit>;
@@ -9740,9 +9740,9 @@ export namespace DeploymentsForRepo {
     environment?: Maybe<string>;
 
     ts?: Maybe<number>;
-  };
+  }
 
-  export type Commit = {
+  export interface Commit {
     __typename?: "DeploymentCommit";
 
     owner?: Maybe<string>;
@@ -9750,21 +9750,21 @@ export namespace DeploymentsForRepo {
     repo?: Maybe<string>;
 
     sha?: Maybe<string>;
-  };
+  }
 }
 
 export namespace SdmGoalById {
-  export type Variables = {
+  export interface Variables {
     id: string;
-  };
+  }
 
-  export type Query = {
+  export interface Query {
     __typename?: "Query";
 
-    SdmGoal?: Maybe<(Maybe<SdmGoal>)[]>;
-  };
+    SdmGoal?: Maybe<Array<Maybe<SdmGoal>>>;
+  }
 
-  export type SdmGoal = {
+  export interface SdmGoal {
     __typename?: "SdmGoal";
 
     id?: Maybe<string>;
@@ -9801,16 +9801,16 @@ export namespace SdmGoalById {
 
     retryFeasible?: Maybe<boolean>;
 
-    preConditions?: Maybe<(Maybe<PreConditions>)[]>;
+    preConditions?: Maybe<Array<Maybe<PreConditions>>>;
 
     approval?: Maybe<Approval>;
 
-    provenance?: Maybe<(Maybe<Provenance>)[]>;
+    provenance?: Maybe<Array<Maybe<Provenance>>>;
 
     data?: Maybe<string>;
-  };
+  }
 
-  export type Repo = {
+  export interface Repo {
     __typename?: "SdmRepository";
 
     name?: Maybe<string>;
@@ -9818,25 +9818,25 @@ export namespace SdmGoalById {
     owner?: Maybe<string>;
 
     providerId?: Maybe<string>;
-  };
+  }
 
-  export type Fulfillment = {
+  export interface Fulfillment {
     __typename?: "SdmGoalFulfillment";
 
     method?: Maybe<string>;
 
     name?: Maybe<string>;
-  };
+  }
 
-  export type PreConditions = {
+  export interface PreConditions {
     __typename?: "SdmCondition";
 
     environment?: Maybe<string>;
 
     name?: Maybe<string>;
-  };
+  }
 
-  export type Approval = {
+  export interface Approval {
     __typename?: "SdmProvenance";
 
     correlationId?: Maybe<string>;
@@ -9852,9 +9852,9 @@ export namespace SdmGoalById {
     userId?: Maybe<string>;
 
     channelId?: Maybe<string>;
-  };
+  }
 
-  export type Provenance = {
+  export interface Provenance {
     __typename?: "SdmProvenance";
 
     correlationId?: Maybe<string>;
@@ -9870,19 +9870,19 @@ export namespace SdmGoalById {
     userId?: Maybe<string>;
 
     channelId?: Maybe<string>;
-  };
+  }
 }
 
 export namespace SentryAlert {
-  export type Variables = {};
+  export interface Variables {}
 
-  export type Subscription = {
+  export interface Subscription {
     __typename?: "Subscription";
 
-    SentryAlert?: Maybe<(Maybe<SentryAlert>)[]>;
-  };
+    SentryAlert?: Maybe<Array<Maybe<SentryAlert>>>;
+  }
 
-  export type SentryAlert = {
+  export interface SentryAlert {
     __typename?: "SentryAlert";
 
     id?: Maybe<string>;
@@ -9900,17 +9900,17 @@ export namespace SentryAlert {
     project_name?: Maybe<string>;
 
     url?: Maybe<string>;
-  };
+  }
 
-  export type Event = {
+  export interface Event {
     __typename?: "SentryEvent";
 
     event_id?: Maybe<string>;
 
     extra?: Maybe<Extra>;
-  };
+  }
 
-  export type Extra = {
+  export interface Extra {
     __typename?: "SentryEventExtra";
 
     artifact?: Maybe<string>;
@@ -9936,5 +9936,5 @@ export namespace SentryAlert {
     version?: Maybe<string>;
 
     environment?: Maybe<string>;
-  };
+  }
 }

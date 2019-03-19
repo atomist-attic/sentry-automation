@@ -15,8 +15,8 @@
  */
 
 import { Configuration } from "@atomist/automation-client";
-import { ingester } from "@atomist/automation-client/graph/graphQL";
-import * as secured from "@atomist/automation-client/secured";
+import { ingester } from "@atomist/automation-client/lib/graph/graphQL";
+import * as secured from "@atomist/automation-client/lib/secured";
 import { RollbackDeployment } from "./handlers/commands/RollbackDeployment";
 
 // GitHub team membership to check if rollback can be triggered
